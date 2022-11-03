@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(26, 225, 228);
+}
+
+.container {
+    display: grid;
+    color: rgb(239, 247, 239);
+    font-weight: 10px;
+    font-size: 30px;
+    grid-auto-rows: 150px;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.grid-1 {
+    margin: 8px;
+    background-color: blue;
+}
+
+.grid-2 {
+    margin: 8px;
+    background-color: rgb(127, 6, 95);
+}
+
+.grid-3 {
+    margin: 8px;
+    background-color: rebeccapurple;
+}
+
+.grid-4 {
+    margin: 8px;
+    background-color: red;
+}
+
+.grid-5 {
+    margin: 8px;
+    background-color: pink;
+}
+
+/* ########################### */
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.one {
+    margin: 5px;
+    background-color: rgb(238, 249, 117);
+}
+
+.two {
+    margin: 5px;
+    background-color: rgb(238, 249, 117);
+}
+
+.three {
+    margin: 5px;
+    background-color: rgb(254, 176, 236);
+}
+
+.four {
+    margin: 5px;
+    background-color:rgb(254, 176, 236);
+}
+
+.five {
+    margin: 5px;
+    background-color: rgb(238, 249, 117);
+}
+
+.six {
+    margin: 5px;
+    background-color: rgb(238, 249, 117);
+}
+
+/* ############################## */
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "sidebar content";
+}
+
+.item-1 {
+    grid-area: header;
+    margin: 5px;
+}
+
+.item-2 {
+    grid-area: sidebar;
+    margin: 5px;
+}
+
+.item-3 {
+    grid-area: content;
+    margin: 5px;
+}
+
+.item-4 {
+    margin: 5px;
+}
+
+.item-5 {
+    margin: 5px;
+}
+
+#img1 {
+    height: 204px;
+    width: 440px;
+}
+
+#img2 {
+    width: 190px;
+    height: 414px;
+}
+
+
+#img4 {
+    height: 204px;
+    width: 240px;
+}
+
+#img5 {
+    height: 196px;
+    width: 239px;
+}
+
+/* ######################################## */
+
+.container-3 {
+    display: grid;
+    grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px, auto);
+    justify-content: space-evenly;
+    align-content: stretch;
+    height: 100px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.element1 {
+    background-color: white;
+    margin: 5px;
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
+    /* grid-column: 1 / -1; */
+    grid-column: span 1;
+    align-self: start;
+}
+
+.element2 {
+    background-color: white;
+    margin: 5px;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: span 2;
+}
+
+.element3 {
+    background-color: white;
+    margin: 5px;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+    grid-row: span 1;
+}
+
+.element4 {
+    background-color: white;
+    margin: 5px;
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-row: span 1;
+    align-self: stretch;
+}
+
+.element5 {
+    background-color: white;
+    margin: 5px;
+    /* grid-row-start: 1;
+    grid-row-end: 2; */
+    grid-row: span 1;
+}
